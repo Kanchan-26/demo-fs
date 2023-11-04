@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FSRNL:40-FORM </title>
+    <style>
+        
+        fieldset {
+            background: rgb(125, 202, 247);
+        
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:400px;height: 600px; padding: 10px; margin: 10px; border: 2px solid #0d0524; color:rgb(57,7,158);">
+            <legend>
+                <h2>Registration Form</h2>
+            </legend>
+            <picture>
+                <img src="img/gfglogo.png" alt="gfglogo" width="100" height="80" /> 
+            </picture>
+            <p>
+                <label>
+                    Salutation
+                    <br />
+                    <select name="Salutation">
+                        <option value="None">--None--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr.">Dr.</option>
+                        <option value="Prof.">Prof.</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="fname">First Name:<input name="First Name" /></label>
+            </p>
+            <p>
+                <label for="lname">Last Name:<input name="Last Name" /></label>
+            </p>
+            <p>
+                Gender:
+                <label><input type="radio" name="Gender" value="Male" />Male</label>
+                <label><input type="radio" name="Gender" value="Female" />Female</label>
+                <label><input type="radio" name="Gender" value="Other" />Other</label>
+            </p>
+            <p>
+                <label for="dob">Date of Birth:<input type="date" name="DOB"></label>
+            </p>
+            <p>
+                <label for="email">Email Address:<input type="text" name="Email" /></label>
+            </p>
+            <p>
+                <label for="phone">Phone Number:<input type="tel" name="Tel" /></label>
+            </p>
+            <p>
+                <label for="address">Address:<textarea rows="4" cols="30" name="Address"></textarea></label>
+            </p>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
